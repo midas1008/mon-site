@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ 
+header {
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    box-shadow: 0 4px 6px 
+}
+ 
+nav {
+    color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    transition: background-color 0.3s ease;
+}
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+ 
+nav a {
+    color: #111111;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    font-size: 1.1rem;
+}
+ 
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fa0404;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+ 
+nav a:hover::before {
+    width: 100%;
+    left: 0%;
+}
+ 
+nav a:hover {
+    color: #d3c614;
+}
+ 
+main {
+    padding: 29rem;
+    animation: fadeIn 1s ease;
+}
+ 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+ 
+footer {
+    background-color: #33333300;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;  
+}
+details {
+            display: inline-block; /* Affiche les panneaux horizontalement */
+            margin-right: 20px; /* Espace entre les panneaux */
+        }
+        summary {
+            cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
+        }
+        body {
+            background: linear-gradient(to right, #d74b04, #102fca);    
+            background-size: cover;
+            color: #0f0f0f; /* Couleur du texte par défaut */
+        }
